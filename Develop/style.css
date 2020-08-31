@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
 *,
 *::before,
 *::after {
@@ -7,9 +9,15 @@
 html,
 body,
 .wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  background-color: #E95420;
+	color: #fff;
+	display: flex;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* padding: 10px;
+	min-height: 100vh; */
 }
 
 body {
@@ -18,20 +26,29 @@ body {
 }
 
 .wrapper {
-  padding-top: 30px;
+  /* padding-top: 30px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px; */
 }
 
 header {
-  text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: #111111;
+  background: #77216F;
+  border-radius: 5px;
+  border-width: 1px;
+  display: flex;
+  width: 100%;
+}
+
+.head {
+ text-align: center;
+ width: 100%
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color:#FFFFFF;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -74,11 +91,11 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #77216F;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: #111111;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -112,7 +129,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed #111111;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
@@ -134,4 +151,8 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}
+
+h2 {
+  text-align: center;
 }
