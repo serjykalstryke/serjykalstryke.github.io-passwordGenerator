@@ -34,7 +34,7 @@ body {
 header {
   padding: 20px;
   padding-top: 0px;
-  color: #111111;
+  color: #ffffff;
   background: #77216F;
   border-radius: 5px;
   border-width: 1px;
@@ -95,7 +95,7 @@ header {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: #111111;
+  color: #ffffff;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -103,6 +103,11 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #77216F73
 }
 
 button[disabled] {
