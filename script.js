@@ -1,5 +1,4 @@
 //There are several console.log statements commented out throughout the document, these were for my testing purposes.
-
 //DOM elenments -- connects dom elements to my javascript
 const resultEl = document.getElementById("result");
 const lengthEl = document.getElementById("length");
@@ -10,7 +9,7 @@ const symbolsEl = document.getElementById("symbols");
 const generateEl = document.getElementById("generate");
 const clipboardEl = document.getElementById("clipboard");
 
-//function constants
+// function constants
 const randomFunc = {
   lower: getRandomLower,
   upper: getRandomUpper,
@@ -19,18 +18,18 @@ const randomFunc = {
 };
 
 //Copy Password to Clipboard
-clipboardEl.addEventListener('click', () => {
-  const textarea = document.createElement("textarea")
-  const password = resultEl.value
+clipboardEl.addEventListener("click", () => {
+  const textarea = document.createElement("textarea");
+  const password = resultEl.value;
 
-  if(!password) {
+  if (!password) {
     return;
   }
 
-  textarea.value = password
+  textarea.value = password;
   document.body.appendChild(textarea);
   textarea.select();
-  document.execCommand('copy')
+  document.execCommand("copy");
   textarea.remove();
   alert("Password Copied to Clipboard");
 });
@@ -84,8 +83,19 @@ function generatePassword(lower, upper, number, symbol, length) {
 
   const finalPassword = generatedPassword.slice(0, length);
 
-  return finalPassword;
+if (finalPassword.length < 8 || finalPassword.length > 288) {
+  alert("password must be between 8 and 288 characters");
+  return "Try Again"
+} else {
+  return finalPassword
 }
+
+  // return finalPassword;
+  
+
+}
+
+
 
 // Generator functions
 

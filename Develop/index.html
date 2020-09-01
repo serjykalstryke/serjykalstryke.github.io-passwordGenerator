@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/3da1a747b2.js"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3da1a747b2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
@@ -25,29 +33,24 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <div class="settings">
-          <div class="setting">
-            <label>Password length</label>
-            <input type="number" id="length" min='4' max='20' value='20' />
+        <div class="form">
+          <label>Password length</label>
+          <div>
+            <input type="number" id="length" min="8" max="280" value="20" />
           </div>
-          <div class="setting">
-            <label>Include uppercase letters</label> 
-            <input type="checkbox" id="uppercase" checked />
-          </div>
-          <div class="setting">
-            <label>Include lowercase letters</label> 
-            <input type="checkbox" id="lowercase" checked />
-          </div>
-          <div class="setting">
-            <label>Include numbers</label> 
-            <input type="checkbox" id="numbers" checked />
-          </div>
-          <div class="setting">
-          </div>
-          <div class="setting">
-            <label>Include symbols</label> 
-            <input type="checkbox" id="symbols" checked />
-          </div>
+
+          <label>Include uppercase letters</label>
+          <input type="checkbox" id="uppercase" checked />
+
+          <label>Include lowercase letters</label>
+          <input type="checkbox" id="lowercase" checked />
+
+          <label>Include numbers</label>
+          <input type="checkbox" id="numbers" checked />
+
+          <label>Include symbols</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
         <div class="card-footer">
           <button class="btn" id="clipboard">
             <i class="far fa-clipboard"></i>

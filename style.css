@@ -33,13 +33,16 @@ body {
 
 header {
   padding: 20px;
-  padding-top: 0px;
+  padding-top: 10px;
   color: #ffffff;
   background: #77216F;
-  border-radius: 5px;
+  border-radius: 1rem;
   border-width: 1px;
   display: flex;
   width: 100%;
+  border: 1px solid black;
+  margin: 0 auto;
+
 }
 
 .head {
@@ -57,15 +60,31 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  align-items: center;
 }
 
-.card-header::after {
+.card-header{
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+/* .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #111111;
   height: 2px;
-}
+} */
 
 .result-container {
   min-height: 100px;
@@ -110,10 +129,6 @@ header {
   background: #77216F73
 }
 
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-}
 
 .float-right {
   float: right;
@@ -158,6 +173,12 @@ button[disabled] {
   }
 }
 
-h2 {
-  text-align: center;
+
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap:3rem;
+  justify-content: center;
+  align-items: center;
 }
